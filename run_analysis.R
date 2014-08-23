@@ -4,7 +4,6 @@
 # Read in the two features files 
 # (assumes the data is in the current working directory)
 # and merge them.
-setwd('/home/paul/CourseraData/UCI HAR Dataset')
 numrows <- 7400
 train <- read.table('X_train.txt', nrows=numrows)
 test <- read.table('X_test.txt', nrows=numrows)

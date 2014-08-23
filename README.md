@@ -23,14 +23,14 @@ them into a single dataframe (_alldat_)
 
 **STEP 2. Extracts only the measurements on the mean and standard deviation for 
 each measurement. Also, appropriately labels the variables with descriptive 
-variable names (i.e.STEP 4).**
+variable names (i.e. STEP 4).**
 
 1. Reads in _features.txt_ to identify the columns containing means & stds
-2. Creates a logical vector, determining which columns of alldat will contain 
+2. Creates a logical vector (_wanted_), determining which columns of alldat will contain 
 "mean()" or "std()" by searching for these strings using `grepl()`. (Note: 
 assuming other variables with "mean" in their name are not required.)
 3. Extracts the required columns by subsetting using the vector from 2 above and
-the `[` operator.
+the `[` operator and `which(wanted)`.
 4. Finally, names the variable columns using the labels from _features.txt_. 
 These already contain descriptive info about the variables as described in 
 _features\_info.txt_ from the URL above.

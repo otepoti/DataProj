@@ -8,10 +8,14 @@ output: html_document
 This is the code book for the data set "tidy2.txt" produced by Paul King as part
 of the course project for Getting & Cleaning Data .
 
-tidy.txt consists of average values of means and standard deviations for a 
+tidy2.txt consists of average values of means and standard deviations for a 
 number of variables measured on 30 subjects performing 6 different activities. 
 Further details of the original data can be found at
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
+The original data contained more than one observation of all the variables for 
+each subject/activity combination. tidy2.txt contains the average of each 
+variable grouped by subject/activity.
 
 The first two columns identify the group of observations over which an average 
 has been taken. These are identified by the subject number (labelled "Subject") 
@@ -20,7 +24,7 @@ which is an integer in the range (1,30), and the activity description (labelled
 {"standing", "sitting", "walking", "laying", "walking upstairs",
 walking downstairs"}.
 
-The remaining columns contain the averages of mean and standard deviation of 
+The remaining columns contain the averages of the mean and standard deviation of 
 variables described by the labels listed below, where mean values are denoted by
 "mean()" in the column name and standard deviations are denoted by "std()". 
 Column names ending in X, Y, or Z denote variable components measured along the 
@@ -33,7 +37,7 @@ produce _tidy.txt_ (the file containing the data frame of variables prior to
 averaging). The originals also contained more features derived from the raw 
 measurements: these were excluded from _tidy.txt_.
 
-Finally, columns including the subject identifier and activity name, taken from
+Columns including the subject identifier and activity name, taken from
 separate files in the original data set, were added to the table of variable data. 
 
 List of variable labels:
